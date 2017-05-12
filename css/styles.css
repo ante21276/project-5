@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #b3b3b3;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style-type: none;
+}
+.phone-mail {
+  color: #ff4d4d;
+}
+.phone-mail span {
+  color: #514f4f;
+}
+.email {
+  margin-bottom: 50px;
+}
+footer h2 {
+  text-align: center;
+  color: #514f4f;
+  font-size: 16px;
+}
+.paragraph-color {
+  color: blue;
+}
+
+/*************
+    HEADER
+*************/
+  header {
+    padding: 0px 0px;
+    background-color: #4d94ff;
+  }
+
+  .header-div1 h1 {
+    padding-top: 20px;
+    color: #514f4f;
+  }
+  .header-div1 ul {
+    width:90%;
+    padding: 0;
+  }
+  .header-div1, .nav {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .header-div1 ul li {
+    background-color: white;
+    margin-bottom: 2px;
+  }
+  .header-div2 {
+    margin-top: 25px;
+  }
+  .header-div2 p {
+    margin: 25px 5% 0;
+    width: 90%;
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 30px;
+  }
+  .images {
+    width: 100%;
+  }
+  .profile-image {
+    width: 60%;
+  }
+  /***************
+      MAIN
+  **************/
+  #main {
+    width: 90%;
+    height: 100%;
+    padding: 45px 5%;
+    background-color: #e6e6e6;
+  }
+  #main h3 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 45px;
+    color: #514f4f;
+  }
+  #main div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #main h2 {
+    text-align: center;
+    color: #514f4f;
+  }
+  #main p {
+    width: 80%;
+    margin: 16px 10%;
+    color: #514f4f;
+  }
+  .skills {
+    background-color: #00e600;
+    padding: 30px 0 30px 0;
+    color: #808080;
+    text-align: center;
+  }
+  .skills ul {
+    padding-left: 0;
+  }
+  /***************
+      FOOTER
+  **************/
+  footer {
+    width: 90%;
+    padding: 5%;
+    background-color: #00cc44;
+    color: #a6a6a6;
+    margin: 0;
+  }
+  #contact-info {
+    border-bottom: #a6a6a6 solid 1px;
+  }
+  .contact p {
+    margin-bottom: 30px;
+    color: #514f4f;
+  }
+  .contact h3 {
+    text-align: center;
+    font-size: 14px;
+  }
+  .phone-mail {
+    color: white;
+  }
+  .left {
+    float: left;
+    margin-bottom: 0;
+    color: white;
+  }
+  .right {
+    float: right;
+    margin-bottom: 0;
+  }
+  .large-nav {
+    display: none;
+  }
+@media (min-width:768px) {
+  body {
+    background-color: lightblue;
+  }
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+  }
+  header {
+    width: 90%;
+    margin: 0 5% 0;
+    background: rgba(255, 255, 255, 0);
+    height: 400px;
+    margin-bottom: 40px;
+  }
+  .header-div1 ul li {
+    background-color: lightblue;
+    margin-left: 20px;
+  }
+  .header-div1 h1 {
+    text-align: center;
+    color: #737373;
+  }
+  .header-div2 p {
+    display: inline-block;
+    float: left;
+    margin:0px;
+    width: 50%;
+    color: #808080;
+  }
+  .header-div2 img {
+    float: right;
+    max-width: 330px;
+  }
+  #main {
+    align-self: center;
+    padding:  30px 0 0 0;
+    margin-left: 5%;
+    overflow: auto;
+  }
+  #main h3 {
+    margin-top:25px;
+    margin-bottom: 50px;
+  }
+  #main div {
+    width: 40%;
+    float: left;
+    padding-left: 7%;
+  }
+  #main div p {
+    font-size: 12px;
+    font-weight:400;
+    color: #737373;
+    width: 80%;
+    text-align: center;
+  }
+  #main div h2 {
+    font-size: 15px;color: #666;
+  }
+  .skills {
+    margin: 0 5% 0 5%;
+  }
+  footer {
+    background: rgba(255, 255, 255, 0);
+    text-align: center;
+  }
+  footer p {
+    padding: 30px 30% 40px;
+    text-align: center;
+    width: 39%;
+    color: #737373;
+  }
+  .large-nav {
+    display: block;
+    float: right;
+  }
+  .right {
+    display: none;
+  }
+  .large-nav ul li {
+    display: inline-block;
+    padding:0 21px;
+  }
+}
+
+@media (min-width:1024px) {
+  .header-div1 {
+    flex-direction: row;
+  }
+  header {
+    margin-bottom: 0;
+  }
+  .header-div1 ul {
+    width: 400px;
+    margin-left: auto;
+  }
+  .header-div1 h1 {
+    width: 250px;
+  }
+  .header-div2 p {
+    width: 60%;
+  }
+  #main div {
+    width:30%;
+    padding-left: 2.5%;
+  }
+}
