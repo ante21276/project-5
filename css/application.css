@@ -136,7 +136,7 @@ footer {
   margin-bottom: 50px; }
 
 @media (min-width: 768px) {
-  .header-div1 h1, #main div p, footer, footer p {
+  .header-div1 h1, div p, footer, footer p {
     text-align: center; }
 
   header {
@@ -182,17 +182,18 @@ footer {
       width: 40%;
       float: left;
       padding-left: 7%; }
-    #main div p {
-      font-size: 12px;
-      font-weight: 400;
-      color: #737373;
-      width: 80%; }
-    #main div h2 {
-      font-size: 15px;
-      color: #737373; }
-    #main div h3 {
-      margin-top: 25px;
-      margin-bottom: 50px; }
+
+  div p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #737373;
+    width: 80%; }
+  div h2 {
+    font-size: 15px;
+    color: #737373; }
+  div h3 {
+    margin-top: 25px;
+    margin-bottom: 50px; }
 
   .skills {
     margin: 0 5%; }

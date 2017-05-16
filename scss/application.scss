@@ -57,17 +57,17 @@
       float: left;
       padding-left: 7%;
     }
-    div {
-      p {
-        @include font($size:12px,$weight:400,$color:$dove-gray);
-        width: 80%;
-        @extend %text-align-center1;}
-      h2 {
-        @include font($size:15px,$color:$dove-gray);}
-      h3 {
-        margin-top:25px;
-        margin-bottom: 50px;
-      }
+  }
+  div {
+    p {
+      @include font($size:12px,$weight:400,$color:$dove-gray);
+      width: 80%;
+      @extend %text-align-center1;}
+    h2 {
+      @include font($size:15px,$color:$dove-gray);}
+    h3 {
+      margin-top:25px;
+      margin-bottom: 50px;
     }
   }
   .skills {
