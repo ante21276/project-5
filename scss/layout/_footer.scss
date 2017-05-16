@@ -1,0 +1,46 @@
+footer {
+  @extend %width;
+  padding: 5% 5% 10%;
+  background: $dodger-blue;
+  color: $silver-chalice;
+  margin: 0;
+  h2 {
+    @extend %text-align-center;
+    @include font($size:16px,$color:$emperor);
+  }
+}
+#contact-info {
+  border-bottom: $silver-chalice solid 1px;
+}
+.contact {
+    p {
+      margin-bottom: 30px;
+      color: $emperor;
+    }
+    h3 {
+      @extend %text-align-center;
+      @include font($size:14px);
+    }
+}
+
+.left {
+  float: left;
+  margin-bottom: 0;
+  color: $white;
+}
+.right {
+  float: right;
+  margin-bottom: 0;
+}
+.large-nav {
+  display: none;
+}
+.phone-mail {
+  color: $sunset-orange;
+  span {
+    color: $emperor;
+  }
+}
+.email {
+  margin-bottom: 50px;
+}

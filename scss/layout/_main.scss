@@ -1,0 +1,38 @@
+#main {
+  @extend %width;
+  height: 100%;
+  padding: 45px 5%;
+  background: $mercury;
+  h3 {
+    margin-top: 0;
+    @extend %text-align-center;
+    margin-bottom: 45px;
+    color: $emperor;
+  }
+  div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  h2 {
+    @extend %text-align-center;
+    color: $emperor;
+  }
+}
+#main p {
+  width: 80%;
+  margin: 16px 10%;
+  color: $emperor;
+}
+
+#skills {
+  background: $onahau;
+  padding: 30px 0;
+  color: $gray;
+  @extend %text-align-center;
+  ul {
+    padding-left: 0;
+  }
+}
+.paragraph-span-color {
+  color: $dodger-blue;
+}

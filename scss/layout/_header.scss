@@ -1,0 +1,40 @@
+header {
+  padding: 0px 0px;
+  background: $dodger-blue;
+}
+
+.header-div1 {
+  h1 {
+  padding-top: 20px;
+  color: $emperor;}
+  ul {
+    width:90%;
+    padding: 0;
+  }
+  li {
+    background: white;
+    margin-bottom: 2px;
+  }
+}
+.header-div1, .nav {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.header-div2 {
+  margin-top: 25px;
+  p {
+    margin: 25px 5% 0;
+    width: 90%;
+    color: $white;
+    font-weight: lighter;
+    padding-bottom: 30px;
+  }
+}
+.header-images {
+  width: 100%;
+}
+.profile-image {
+  width: 60%;
+}

@@ -1,0 +1,10 @@
+@mixin mq($size) {
+  @media (min-width:$size) {
+  }
+}
+
+@mixin font($size:null,$weight:null, $color:null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
