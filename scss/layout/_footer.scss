@@ -4,9 +4,20 @@ footer {
   background: $dodger-blue;
   color: $silver-chalice;
   margin: 0;
+  @media #{$mq-tablet}{
+    background: $white;
+    padding-bottom: 5%;
+    @extend %text-align-center1;}
   h2 {
     @extend %text-align-center;
     @include font(16px,null,$emperor);
+  }
+  p {
+    @media #{$mq-tablet}{
+      padding: 30px 30% 40px;
+      @extend %text-align-center1;
+      width: 39%;
+      color: $dove-gray;}
   }
 }
 #contact-info {
@@ -31,9 +42,19 @@ footer {
 .right {
   float: right;
   margin-bottom: 0;
+  @media #{$mq-tablet}{
+    display: none;}
 }
 .large-nav {
   display: none;
+  @media #{$mq-tablet}{
+    display: block;
+    float: right;}
+  li {
+    @media #{$mq-tablet}{
+      display: inline-block;
+      padding:0 21px;}
+  }
 }
 .phone-mail {
   color: $sunset-orange;

@@ -3,6 +3,9 @@ body {
   background: $nobel;
   @extend %text-align-center;
   margin:0;
+  @media #{$mq-tablet} {
+    background: $white;
+  }
 }
 p {
   @extend %text-align-center;

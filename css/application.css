@@ -4,6 +4,12 @@ Colors
 /************
 Media queries sizes
 ************/
+@media (min-width: 768px) {
+  .header-div1, #main p, footer, footer p {
+    text-align: center; }
+
+  header {
+    width: 90%; } }
 /************
 TEXT ALIGN
 ************/
@@ -20,6 +26,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: #b3b3b3;
   margin: 0; }
+  @media (min-width: 768px) {
+    body {
+      background: #fff; } }
 
 a {
   text-decoration: none;
@@ -37,21 +46,56 @@ li {
 header {
   padding: 0px 0px;
   background: #4d94ff; }
+  @media (min-width: 768px) {
+    header {
+      margin: 0 5% 0;
+      background: #fff;
+      height: 400px;
+      margin-bottom: 40px; } }
+  @media (min-width: 1024px) {
+    header {
+      margin-bottom: 0; } }
 
+@media (min-width: 1024px) {
+  .header-div1 {
+    flex-direction: row; } }
 .header-div1 h1 {
   padding-top: 20px;
   color: #514f4f; }
+@media (min-width: 768px) {
+  .header-div1 {
+    color: #737373; } }
+@media (min-width: 1024px) {
+  .header-div1 {
+    width: 250px; } }
 .header-div1 ul {
   width: 90%;
   padding: 0; }
+  @media (min-width: 1024px) {
+    .header-div1 ul {
+      width: 400px;
+      margin-left: auto; } }
 .header-div1 li {
   background: #fff;
   margin-bottom: 2px; }
+  @media (min-width: 768px) {
+    .header-div1 li {
+      background: #fff;
+      margin-left: 20px; } }
+
+.header-div1 p {
+  width: 60%; }
 
 .header-div1, .nav {
   display: flex;
   flex-direction: column;
   align-self: center; }
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle; } }
 
 .header-div2 {
   margin-top: 25px; }
@@ -60,36 +104,79 @@ header {
     width: 90%;
     font-weight: lighter;
     padding-bottom: 30px; }
+    @media (min-width: 768px) {
+      .header-div2 p {
+        display: inline-block;
+        float: left;
+        margin: 0px;
+        width: 50%;
+        color: #808080; } }
 
 .header-images {
   width: 100%; }
 
 .profile-image {
   width: 60%; }
+  @media (min-width: 768px) {
+    .profile-image {
+      float: right;
+      max-width: 330px; } }
 
 #main {
   height: 100%;
   padding: 45px 5%;
   background: #e6e6e6; }
+  @media (min-width: 768px) {
+    #main {
+      align-self: center;
+      padding: 30px 0 0 0;
+      margin-left: 5%;
+      overflow: auto; } }
   #main h3 {
     margin-top: 0;
     margin-bottom: 45px;
     color: #514f4f; }
+    @media (min-width: 768px) {
+      #main h3 {
+        margin-top: 25px;
+        margin-bottom: 50px; } }
   #main div {
     width: 100%;
     margin-bottom: 50px; }
+    @media (min-width: 768px) {
+      #main div {
+        width: 40%;
+        float: left;
+        padding-left: 7%; } }
+    @media (min-width: 1024px) {
+      #main div {
+        width: 30%;
+        padding-left: 2.5%; } }
   #main h2 {
     color: #514f4f; }
+    @media (min-width: 768px) {
+      #main h2 {
+        font-size: 15px;
+        color: #737373; } }
 
 #main p {
   width: 80%;
   margin: 16px 10%;
   color: #514f4f; }
+  @media (min-width: 768px) {
+    #main p {
+      font-size: 12px;
+      font-weight: 400;
+      color: #737373;
+      width: 80%; } }
 
 #skills {
   background: #cce6ff;
   padding: 30px 0;
   color: #808080; }
+  @media (min-width: 768px) {
+    #skills {
+      margin: 0 5%; } }
   #skills ul {
     padding-left: 0; }
 
@@ -101,9 +188,18 @@ footer {
   background: #4d94ff;
   color: #a6a6a6;
   margin: 0; }
+  @media (min-width: 768px) {
+    footer {
+      background: #fff;
+      padding-bottom: 5%; } }
   footer h2 {
     font-size: 16px;
     color: #514f4f; }
+  @media (min-width: 768px) {
+    footer p {
+      padding: 30px 30% 40px;
+      width: 39%;
+      color: #737373; } }
 
 #contact-info {
   border-bottom: #a6a6a6 solid 1px; }
@@ -122,9 +218,20 @@ footer {
 .right {
   float: right;
   margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .right {
+      display: none; } }
 
 .large-nav {
   display: none; }
+  @media (min-width: 768px) {
+    .large-nav {
+      display: block;
+      float: right; } }
+  @media (min-width: 768px) {
+    .large-nav li {
+      display: inline-block;
+      padding: 0 21px; } }
 
 .phone-mail {
   color: #ff4d4d; }
@@ -133,102 +240,5 @@ footer {
 
 .email {
   margin-bottom: 50px; }
-
-@media (min-width: 768px) {
-  .header-div1 h1, #main div p, footer, footer p {
-    text-align: center; }
-
-  header {
-    width: 90%; }
-
-  body {
-    background: #fff; }
-
-  .nav {
-    flex-direction: row;
-    justify-content: center;
-    vertical-align: middle; }
-
-  header {
-    margin: 0 5% 0;
-    background: #fff;
-    height: 400px;
-    margin-bottom: 40px; }
-
-  .header-div1 h1 {
-    color: #737373; }
-  .header-div1 li {
-    background: #fff;
-    margin-left: 20px; }
-
-  .header-div2 p {
-    display: inline-block;
-    float: left;
-    margin: 0px;
-    width: 50%;
-    color: #808080; }
-
-  .profile-image {
-    float: right;
-    max-width: 330px; }
-
-  #main {
-    align-self: center;
-    padding: 30px 0 0 0;
-    margin-left: 5%;
-    overflow: auto; }
-    #main div {
-      width: 40%;
-      float: left;
-      padding-left: 7%; }
-    #main div p {
-      font-size: 12px;
-      font-weight: 400;
-      color: #737373;
-      width: 80%; }
-    #main div h2 {
-      font-size: 15px;
-      color: #737373; }
-    #main div h3 {
-      margin-top: 25px;
-      margin-bottom: 50px; }
-
-  .skills {
-    margin: 0 5%; }
-
-  footer {
-    background: #fff;
-    padding-bottom: 5%; }
-    footer p {
-      padding: 30px 30% 40px;
-      width: 39%;
-      color: #737373; }
-
-  .large-nav {
-    display: block;
-    float: right; }
-    .large-nav li {
-      display: inline-block;
-      padding: 0 21px; }
-
-  .right {
-    display: none; } }
-@media (min-width: 1024px) {
-  header {
-    margin-bottom: 0; }
-
-  .header-div1 {
-    flex-direction: row; }
-    .header-div1 ul {
-      width: 400px;
-      margin-left: auto; }
-    .header-div1 h1 {
-      width: 250px; }
-    .header-div1 p {
-      width: 60%; }
-
-  #main div {
-    width: 30%;
-    padding-left: 2.5%; } }
 
 /*# sourceMappingURL=application.css.map */

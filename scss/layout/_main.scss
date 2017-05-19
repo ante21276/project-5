@@ -3,31 +3,56 @@
   height: 100%;
   padding: 45px 5%;
   background: $mercury;
+  @media #{$mq-tablet} {
+    align-self: center;
+    padding:  30px 0 0 0;
+    margin-left: 5%;
+    overflow: auto;
+  }
   h3 {
     margin-top: 0;
     @extend %text-align-center;
     margin-bottom: 45px;
     color: $emperor;
+    @media #{$mq-tablet}{
+      margin-top:25px;
+      margin-bottom: 50px;}
   }
   div {
     width: 100%;
     margin-bottom: 50px;
+    @media #{$mq-tablet}{
+      width: 40%;
+      float: left;
+      padding-left: 7%;}
+    @media #{$mq-desktop} {
+      width:30%;
+      padding-left: 2.5%;}
   }
   h2 {
     @extend %text-align-center;
     color: $emperor;
+    @media #{$mq-tablet}{
+      @include font(15px,null,$dove-gray);
+    }
   }
 }
 #main p {
   width: 80%;
   margin: 16px 10%;
   color: $emperor;
+  @media #{$mq-tablet} {
+    @include font(12px,400,$dove-gray);
+    width: 80%;
+    @extend %text-align-center1;}
 }
 
 #skills {
   background: $onahau;
   padding: 30px 0;
   color: $gray;
+  @media #{$mq-tablet}{
+    margin: 0 5%;}
   @extend %text-align-center;
   ul {
     padding-left: 0;

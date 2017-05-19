@@ -20,3 +20,12 @@ Media queries sizes
 
 $mq-tablet: "(min-width:768px)";
 $mq-desktop: "(min-width:1024px)";
+
+@media #{$mq-tablet} {
+  %text-align-center1 {
+    text-align: center;
+  }
+  %width1 {
+    width: 90%;
+  }
+}
